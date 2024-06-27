@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+
+</html>
 
 <head>
     <link rel="stylesheet" href="./assets/styles.css">
@@ -10,10 +12,23 @@
 <body>
     <!-- Header of the page -->
     <header class="header">
-        [MyBlog]
+        [ M y   B l o g ]
     </header>
     <!-- Body of the page -->
-    <form>
+    <description id="form-description">
+        Here is where to enter your blog details! Be sure to enter all three fields.
+    </description>
+    <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+
+        <button type="submit">Submit</button>
         <!-- Here is a brief description of the posting instructions -->
         <!-- Here is the form to fill out and a button to click on -->
         <!-- Need username, blog title, blog content -->
@@ -28,4 +43,8 @@
         <!-- TO-DO add link to developers portfolio -->
         Thank you for visiting our blog!
     </footer>
+    <!-- Linking the Javascripts -->
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+
 </body>
