@@ -7,6 +7,7 @@
     align-items: center;
     background: linear-gradient(to top, hsl(0, 0%, 100%), #000000);
     color: rgb(0, 0, 0);
+    font-size: 24px;
 }
 
 .footer {
@@ -19,6 +20,15 @@
     color: rgb(0, 0, 0);
     flex-direction: column;
 
+}
+
+.body-dark {
+    background-color: #000000;
+    color: white;
+}
+
+.pink {
+    color: rgb(247, 98, 247);
 }
 
 a {
