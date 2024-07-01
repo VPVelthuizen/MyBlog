@@ -11,35 +11,37 @@
 
 <body>
     <!-- Header of the page -->
-    <header class="header">
-        [ M y   B l o g ]
+    <header id="header" class="header">
+        [ M y B l o g ]
     </header>
     <!-- Body of the page -->
-    <description id="form-description">
-        Here is where to enter your blog details! Be sure to enter all three fields.
-    </description>
-    <form id="myForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+    <div id="body">
+        <description id="form-description">
+            Here is where to enter your blog details! Be sure to enter all three fields.
+        </description>
+        <form id="myForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
 
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required></textarea>
 
-        <button type="submit">Submit</button>
-        <!-- Here is a brief description of the posting instructions -->
-        <!-- Here is the form to fill out and a button to click on -->
-        <!-- Need username, blog title, blog content -->
-        <!-- Button to submit form, must only press if all fields are filled -->
-        <!-- When submitting, redirect to posts page -->
-    </form>
-    <!-- Where blogs show up -->
-    <paragraph>
-    </paragraph>
+            <button type="submit">Submit</button>
+            <!-- Here is a brief description of the posting instructions -->
+            <!-- Here is the form to fill out and a button to click on -->
+            <!-- Need username, blog title, blog content -->
+            <!-- Button to submit form, must only press if all fields are filled -->
+            <!-- When submitting, redirect to posts page -->
+        </form>
+        <!-- Where blogs show up -->
+        <paragraph>
+        </paragraph>
+    </div>
     <!-- Footer of the page -->
-    <footer class="footer">
+    <footer id="footer" class="header footer">
         <text>Thank you for visiting us!</text>
         <a href="https://vpvelthuizen.github.io/Professional-Portfolio">[Click here for Vincent's Portfolio]</a>
     </footer>
