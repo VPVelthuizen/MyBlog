@@ -1,7 +1,3 @@
-// Make a rendering blogs function
-
-// Add event listener for page load to render blogs
-
 // Button to submit form, must only press if all fields are filled
 document.getElementById("myForm").addEventListener("submit", function(event) {
     const username = document.getElementById("username");
@@ -10,7 +6,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     if (!username.value || !title.value || !content.value) {
         alert("Please fill in all fields before submitting.");
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault();
     };
     event.preventDefault();
     const newBlog = {
@@ -23,5 +19,5 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     username.value = "";
     title.value = "";
     content.value = "";
-    window.location.href = "./blog.html";
+    window.location.href = "blog.html";
 });

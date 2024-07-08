@@ -6,14 +6,11 @@ const footer = document.getElementById('footer');
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    let toggle = JSON.parse(localStorage.getItem('toggle'))
-    console.log(toggle);
+    let toggle = JSON.parse(localStorage.getItem('toggle'));
     if (!toggle) {
         localStorage.setItem('toggle', '1')
     }
     if (toggle == '0') {
-        console.log(body);
-        console.log(`${body}`);
         body.classList.add('body-dark');
         header.classList.add('footer');
         footer.classList.remove('footer');
