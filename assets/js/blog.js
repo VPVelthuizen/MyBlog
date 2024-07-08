@@ -1,6 +1,17 @@
 const toggleBtn = document.getElementById('toggle');
 
-// TO-DO Add button controls for light/dark mode
+// Here is the function that renders the blog list
+function render() {
+    let listPost = document.querySelector('#listPost');
+    blogList.forEach(post => {
+        const postHTML = `<li class= 'title'>${post.title}</li>
+        <li class= 'username'>Made by ${post.username}</li>
+        <li class= 'content'>${post.content}</li>`;
+        listPost.appendChild(postHTML);
+    });
+};
+
+// Here is the event listener for light/dark mode
 toggleBtn.addEventListener('click', function () {
     let toggle = JSON.parse(localStorage.getItem('toggle'))
     if (toggle == "1") {
@@ -15,4 +26,8 @@ toggleBtn.addEventListener('click', function () {
         header.classList.remove('footer');
         footer.classList.add('footer')
     };
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    render();
 })
