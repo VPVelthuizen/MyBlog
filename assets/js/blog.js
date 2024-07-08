@@ -2,7 +2,7 @@ const toggleBtn = document.getElementById('toggle');
 
 // Here is the function that renders the blog list
 function render() {
-    let listPost = document.querySelector('#listPost');
+    let listPost = document.getElementById('#listPost');
     blogList.forEach(post => {
         const postHTML = `<li class= 'title'>${post.title}</li>
         <li class= 'username'>Made by ${post.username}</li>
